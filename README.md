@@ -25,3 +25,5 @@ React, SCSS, MongoDB, axios, Zustand
   : value값을 비우는 코드 추가
 - 데이터를 추가/삭제 했을 때 갱신되지 않음<br/>
  : 의존성 배열에 data 넣음
+- 몽고디비 갱신이 안 됨<br/>
+ : ??
