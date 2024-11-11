@@ -7,26 +7,21 @@
 
 ### `개발 환경`
 
-React, SCSS, MongoDB
+React, SCSS, MongoDB, axios, Zustand
 
 ### `제작 기간`
 
 2024.09 - 약 3일
 
-### `예시`
+### `기능`
 
-이미지를 넣어야지\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-
+- 등록
+- 삭제 / id가 다른 데이터만 필터
+- 완료/진행중 키고 끄기
+- 할 일 All, Active, Completed로 구분
 
 ## 트러블슈팅
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
+- 할 일 등록 후에 할일이 지워지지 않음<br/>
+  : value값을 비우는 코드 추가
+- 데이터를 추가/삭제 했을 때 갱신되지 않음<br/>
+ : 의존성 배열에 data 넣음
