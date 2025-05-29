@@ -3,10 +3,12 @@ import store from '../state/store'
 
 const Item = ({obj}) => {
    const {dataCtrl} = store();
+
    function todoStatus(){
       let d = {type:'put', data:{id:obj.id, status:!obj.status}}
       dataCtrl(d)
    }
+
    return (
       <li>
          <p>

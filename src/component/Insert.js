@@ -16,18 +16,16 @@ const Insert = () => {
       if(value !== ''){
          dataCtrl({type:'post',data});
       }else{
-         alert('내용을 입력해 주세요!')
+         alert('내용을 입력하세요!')
       }
       e.target.todo.value='';
       e.target.todo.focus();
    }
 
-
-
    return (
       <div className='insert'>
          <form onSubmit={insert}>
-            <input type='text' name='todo' placeholder='오늘은 무엇을 하실건가요?'/>
+            <input type='text' name='todo' placeholder='오늘 할 일 : 예) 붕어빵 사먹기'/>
             <button> + </button>
          </form>
       </div>
