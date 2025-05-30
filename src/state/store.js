@@ -2,9 +2,8 @@ import axios from 'axios';
 import {create} from 'zustand';
 
 const instance = axios.create({
-   baseURL: process.env.SERVER_URL
+   baseURL: process.env.REACT_APP_SERVER_URL
 });
-
 
 const store = create((set)=>({
    data: [],
