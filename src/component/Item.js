@@ -11,11 +11,11 @@ const Item = ({obj}) => {
 
    return (
       <li>
-         <p>
+         <div>
             <input id={obj.id} type='checkbox' defaultChecked={obj.status} onChange={todoStatus}/>
             <label htmlFor={obj.id}></label>
-            {obj.todo}
-         </p>
+            <p>{obj.todo}</p>
+         </div>
          <button onClick={()=>dataCtrl({type:'delete', data:obj.id})}> X </button>
       </li>
    )

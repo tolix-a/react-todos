@@ -25,7 +25,7 @@ const Insert = () => {
    return (
       <div className='insert'>
          <form onSubmit={insert}>
-            <input type='text' name='todo' placeholder='오늘 할 일 : 예) 붕어빵 사먹기'/>
+            <input type='text' name='todo' maxLength='50' placeholder='50자 이내의 할 일 : 예) 붕어빵 사먹기'/>
             <button> + </button>
          </form>
       </div>
