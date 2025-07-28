@@ -10,7 +10,7 @@ const Sort = () => {
    },[data,type])
    
    return (
-      <div className='footer'>
+      <div className='header'>
          <div>{sortData.length} items</div>
          <div>
             <button onClick={()=>setType('All')} className={type === 'All' ? 'active' : ''}>All</button>
