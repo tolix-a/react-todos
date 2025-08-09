@@ -1,15 +1,23 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Item from './Item'
 import store from '../state/store';
 
 const List = () => {
    const {sortData, dataCtrl} = store();
+   const [isLoading, setIsLoading] = useState(true);
+
+   const fetchData = async ()=>{
+      setIsLoading(true);
+      await dataCtrl({type:'get'});
+      setIsLoading(false);
+   }
 
    useEffect(()=>{
-      dataCtrl({type:'get'});
+      fetchData();
    },[]);
    
-   if(!sortData.length) return <>loading ... </>
+   if(isLoading) return <>loading ... </>
+   if(!sortData.length) return <>데이터가 없습니다. </>
 
    return (
       <ul>
