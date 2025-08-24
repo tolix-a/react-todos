@@ -17,8 +17,8 @@ React, SCSS, MongoDB, axios, Zustand
 
 - 등록
 - 삭제 / id가 다른 데이터만 필터
-- 완료/진행중 키고 끄기
-- 할 일 All, Active, Completed로 구분
+- 상태 변경: 완료/진행중
+- 탭으로 sort [전체, 진행중, 완료] 구분
 
 ## 트러블슈팅
 - 할 일 등록 후에 할일이 지워지지 않음<br/>
